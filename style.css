@@ -1,0 +1,39 @@
+
+.typewriter {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+}
+
+.typewriter p {
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-inline: auto;
+    overflow: hidden;
+    /* mantem na single line */
+    white-space: nowrap;
+    /* o cursor */
+    border-right: 1px solid;
+    /* steps = numero de caracteres */
+    animation: typing 3s steps(22) forwards,
+    blink 1s step-end infinite;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
